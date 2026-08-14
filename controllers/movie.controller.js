@@ -1,6 +1,5 @@
 const { Movie } = require('../models/movie.model');
 
-
 exports.createMovie = async (req, res) => {
   try {
     const { title, description, genre, posterImage } = req.body;
