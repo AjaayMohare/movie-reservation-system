@@ -3,7 +3,6 @@ const router = express.Router();
 const movieController = require('../controllers/movie.controller');
 const showtimeController = require('../controllers/showtime.controller');
 const { verifyToken, isAdmin } = require('../middleware/auth');
-
 // Movie routes
 router.post('/', verifyToken, isAdmin, movieController.createMovie);
 router.get('/', movieController.getAllMovies);
