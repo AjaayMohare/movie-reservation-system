@@ -1,7 +1,6 @@
 const {Reservation} = require('../models/reservation.model');
 const {Showtime} = require('../models/showtime.model');
 const {User} = require('../models/user.model');
-
 const createReservation = async (req, res) => {
   const { showtimeId, seats } = req.body;
   const userId = req.user.id;
