@@ -1,7 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('./db');
 const { Movie } = require('./movie.model');
-
 const Showtime = sequelize.define('Showtime', {
   date: {
     type: DataTypes.DATEONLY,
