@@ -1,7 +1,6 @@
 const {Showtime} = require('../models/showtime.model');
 const {Movie} = require('../models/movie.model');
 
-
 exports.createShowtime = async (req, res) => {
   try {
     const { movieId } = req.params;
